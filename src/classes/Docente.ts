@@ -1,11 +1,11 @@
 import Usuario from "./Usuario";
 
-enum Especialidades {
-    JS = 'JS',
-    CSS = 'CSS',
-    REACT = 'React',
-    TYPESCRIPT = 'Typescript',
-    POO = 'POO'
+export enum Especialidades {
+    'JS' = 'JS',
+    'CSS' = 'CSS',
+    'REACT' = 'React',
+    'TYPESCRIPT' = 'Typescript',
+    'POO' = 'POO'
 }
 
 export default class Docente extends Usuario {

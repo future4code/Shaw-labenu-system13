@@ -4,10 +4,14 @@ export default class Usuario {
     public id: string
     constructor(
         public nome: string,
-        protected email: string,
+        public email: string,
         public dataNasc: string,
         public turmaId: string
     ){
         this.id = uuid()
+    }
+
+    getId = () => {
+        return this.id
     }
 }

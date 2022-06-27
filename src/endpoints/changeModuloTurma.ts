@@ -16,7 +16,7 @@ export const changeModuloTurma = async (req: Request, res: Response): Promise<vo
 
         updateModuloTurma(id, modulo)
         .then(response => {
-            res.status(201).send({message: 'Módulo da turma alterado com sucesso!', response: response})
+            res.status(201).send({message: 'Módulo da turma alterado com sucesso!'})
         })
         
     } catch (error: any) {

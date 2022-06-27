@@ -15,7 +15,7 @@ export const createTurma = async (req: Request, res: Response): Promise<void> =>
 
         insertTurma(novaTurma)
         .then(() => {
-            res.status(201).send({message: 'Nova turma criada', docente: novaTurma})
+            res.status(201).send({message: 'Nova turma criada', turma: novaTurma})
         })
 
     } catch (error: any) {

@@ -3,11 +3,10 @@ import { selectEstudanteByNome } from "../data/selectEstudanteByNome"
 
 export const getEstudanteByNome = async (req: Request, res: Response): Promise<void> => {
     try {
-        const nome = req.query.nome as string
+        let nome = req.query.nome as string
 
         if (!nome){
-            res.status(422)
-            throw new Error("Nome inválido.")
+            nome = ''
         }
 
         const estudante = await selectEstudanteByNome(nome)

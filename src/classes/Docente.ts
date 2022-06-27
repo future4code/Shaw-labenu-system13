@@ -3,8 +3,8 @@ import Usuario from "./Usuario";
 export enum Especialidades {
     'JS' = 'JS',
     'CSS' = 'CSS',
-    'REACT' = 'React',
-    'TYPESCRIPT' = 'Typescript',
+    'REACT' = 'REACT',
+    'TYPESCRIPT' = 'TYPESCRIPT',
     'POO' = 'POO'
 }
 

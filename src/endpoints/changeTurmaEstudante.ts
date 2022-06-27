@@ -22,7 +22,7 @@ export const changeTurmaEstudante = async (req: Request, res: Response): Promise
 
         updateTurmaEstudante(id, turmaId)
         .then(response => {
-            res.status(201).send({message: '"turma_id" alterado com sucesso!', response: response})
+            res.status(201).send({message: "'turma_id' alterado com sucesso!"})
         })
         
     } catch (error: any) {

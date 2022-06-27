@@ -31,7 +31,7 @@ export const createDocente = async (req: Request, res: Response): Promise<void> 
 
         const {nome, email, dataNasc, turmaId, especialidades} = req.body
 
-        if (!nome || !email || !dataNasc || turmaId){
+        if (!nome || !email || !dataNasc || !turmaId){
             res.status(422)
             throw new Error('Campo "nome", "email", "dataNasc" ou "turmaId" inválido.')
         }

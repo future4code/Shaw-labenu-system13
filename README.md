@@ -10,13 +10,13 @@ Ele deve possuir, ao menos, as 3 entidades importantes:
 
 2. Docente
 
-    Representa docentes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e todas as especialidades dele. Há 7 especialidades: React, Redux, CSS, Testes, Typescript, Programação Orientada a Objetos e Backend
+    Representa docentes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e todas as especialidades dele. Há 5 especialidades: React, CSS,, JS, Typescript E Programação Orientada a Objetos
 
 3. Turma
 
-    Toda turma é composta das seguintes características: id, nome, data de início, data de término, lista de professores responsáveis, uma lista de alunos e módulo atual em que a turma está.
+    Toda turma é composta das seguintes características: id, nome, e módulo atual em que a turma está.
 
-    O módulo pode assumir os valores de 1 a 7 ou `undefined`, indicando que as aulas dessa turma ainda não começaram. Para esse exercício, vamos considerar que existam dois tipos de turma: integral ou noturna. Há uma restrição para o nome das turmas noturnas: tem que terminar com `-na-night`.
+    O módulo pode assumir os valores de 1 a 6 ou `0`, indicando que as aulas dessa turma ainda não começaram.
 
 As funcionalidades básicas são:
 
@@ -26,8 +26,17 @@ As funcionalidades básicas são:
 
 → Criar turma;
 
-→ Adicionar estudante na turma;
+→ Mudar estudante de turma;
 
-→ Adicionar docente na turma;
+→ Mudar docente de turma;
 
-→ Pegar a idade de algum estudante a partir do id
+→ Mudar turma de módulo;
+
+→ Conferir estudante por nome;
+
+→ Conferir todos os docentes;
+
+→ Conferir turmas ativas;
+
+### Documentação
+https://documenter.getpostman.com/view/20357201/UzBsJkBS
